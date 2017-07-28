@@ -1,0 +1,259 @@
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    >
+    <LinearLayout
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.victor.mertial_test.activities.setting.SettingActivity"
+        android:weightSum="1"
+        android:id="@+id/detail">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"
+            />
+
+
+
+        <!--您的個人資訊-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的個人資訊"
+            android:textColor="#888888"
+            android:id="@+id/abc3"
+            android:padding="8dp"
+            android:textSize="20dp"
+            />
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帳號 "
+                    android:textColor="#000000"
+                    android:id="@+id/account"
+                    android:textSize="19dp"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:text="性別 "
+                    android:textColor="#000000"
+                    android:id="@+id/gender"
+                    android:layout_below="@+id/account"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:text="生日 "
+                    android:textColor="#000000"
+                    android:id="@+id/birthday"
+                    android:layout_below="@+id/gender"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19dp"
+                    android:text="信箱 "
+                    android:textColor="#000000"
+                    android:id="@+id/emailadd"
+                    android:layout_below="@+id/birthday"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="8">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/default_pic"
+                    android:id="@+id/reset_personal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--您的健康基本資訊-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的健康基本資訊"
+            android:textColor="#888888"
+            android:id="@+id/basedata"
+            android:padding="8dp"
+            android:textSize="20dp"
+            />
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高 "
+                android:textColor="#000000"
+                android:id="@+id/personalheight"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="體重 "
+                android:textColor="#000000"
+                android:id="@+id/personalweight"
+                android:layout_below="@+id/personalheight"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:background="#FFFFFF"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/gogogo"
+                android:id="@+id/reset_higwei"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <!--裝置權限-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的裝置權限"
+            android:textColor="#888888"
+            android:id="@+id/equipmentset"
+            android:padding="8dp"
+            android:textSize="20dp"
+            />
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="權限密碼"
+                android:textColor="#000000"
+                android:id="@+id/permission_psw"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="查看我的裝置權限列表"
+                android:textColor="#000000"
+                android:id="@+id/permission_share"
+                android:layout_below="@+id/permission_psw"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:scaleType="centerInside"
+                android:background="#FFFFFF"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/open9"
+                android:id="@+id/reset_permissionpsw"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/reset_permissionshare"
+                android:layout_alignStart="@+id/reset_permissionshare" />
+
+            <ImageButton
+                android:scaleType="centerInside"
+                android:background="#FFFFFF"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/share15"
+                android:id="@+id/reset_permissionshare"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <!--WeCar說明-->
+
+
+        <!--關於WeCare-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="關於"
+            android:textColor="#888888"
+            android:id="@+id/about"
+            android:padding="8dp"
+            android:textSize="20dp"
+            />
+
+
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="接收WeCare通知"
+                android:textSize="20dp"
+                android:id="@+id/message"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textOff="No"
+                android:textOn="Yes"
+                android:checked="false" />
+        </RelativeLayout>
+
+        <Button
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#007799"
+            android:text="登出"
+            android:textSize="23dp"
+            android:id="@+id/logout"
+            android:layout_below="@+id/dfewf"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </LinearLayout>
+</ScrollView>

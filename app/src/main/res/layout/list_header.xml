@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="9dp"
+    android:layout_marginLeft="9dp"
+    android:padding="7dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444444"
+        android:text="血壓"
+        android:id="@+id/personalName2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:text="五次"
+        android:textColor="#FF0000"
+        android:id="@+id/personalStatus2"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/personalName2"
+        android:layout_toEndOf="@+id/personalName2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="異常"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#444444"
+        android:id="@+id/error"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/personalStatus2"
+        android:layout_toEndOf="@+id/personalStatus2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="查看數據"
+        android:id="@+id/textView14"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_expand_toggle"
+        android:layout_toStartOf="@+id/btn_expand_toggle" />
+
+    <ImageView
+        android:id="@+id/btn_expand_toggle"
+        android:src="@drawable/circle_plus"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="30dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

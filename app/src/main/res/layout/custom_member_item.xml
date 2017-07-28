@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/custom_bg"
+    android:clickable="true"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/member_image"
+        android:src="@drawable/newtest"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Victor Lin"
+        android:id="@+id/member_name"
+        android:layout_below="@+id/member_image"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@drawable/next_step"
+        android:layout_width="wrap_content"
+        android:focusable="true"
+        android:layout_height="30dp"
+        android:id="@+id/next_step"
+        android:layout_below="@+id/member_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

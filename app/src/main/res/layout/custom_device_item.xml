@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:background="@drawable/custom_bg"
+    android:clickable="true"
+
+    >
+    <ImageView
+        android:id="@+id/deivice_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/bindingwd_icon"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wearable"
+        android:padding="10sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/deivice_image"
+        android:layout_toEndOf="@+id/deivice_image" />
+
+</RelativeLayout>

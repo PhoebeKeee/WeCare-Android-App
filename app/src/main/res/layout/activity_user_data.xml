@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.selfInfo.UserDataActivity">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+    <it.neokree.materialtabs.MaterialTabHost
+        android:id="@+id/materialTabHostW"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:textColor="@android:color/white"
+        app:primaryColor="#009FCC"
+        app:accentColor="#003C9D" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerW"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/materialTabHostW"
+        android:layout_weight="1"
+        />
+</LinearLayout>

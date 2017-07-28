@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">WeCare</string>
+    <string name="title_activity_home">WeCare</string>
+    <string name="title_activity_main">登入</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_page">navigation_page</string>
+    <string name="title_activity_sub">管理</string>
+    <string name="title_activity_message">訊息匣</string>
+    <string name="title_activity_setting">設定</string>
+    <string name="title_activity_user_data">長期健康資訊</string>
+    <string name="title_activity_wearable_device">裝置名稱</string>
+    <string name="title_activity_search_member">搜尋</string>
+<!-- TODO: Remove or change this placeholder text -->
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="FragmentPage1">Fragment Page 1</string>
+    <string name="outside_page">外部裝置</string>
+    <string name="inside_page">本機裝置</string>
+
+    <string-array name="tabs">
+        <item><FONT COLOR="#fffafe">本機裝置</FONT></item>
+        <item><FONT COLOR="#fffafe">外部裝置</FONT></item>
+    </string-array>
+
+    <string-array name="weartabs">
+        <item>週</item>
+        <item>月</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_account">請輸入您的帳號</string>
+    <string name="hint_password">請輸入您的密碼</string>
+    <string name="hint_email">請輸入您的Email</string>
+    <string name="hint_share_password">請輸入您的權限密碼</string>
+    <string name="btn_reset">重設密碼</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_forgetpsw">Forgot Password</string>
+    <string name="btn_register">Not a member? Register now.</string>
+    <string name="title_activity_reset_higwei">設定</string>
+    <string name="title_activity_reset_share">設定</string>
+    <string name="search_for_devices">搜尋裝置</string>
+    <string name="right_page">right_page</string>
+    <string name="unbind">unbind</string>
+    <string name="connected_device_btn">正在連結的裝置</string>
+    <string name="self_data_btn">個人長期資訊</string>
+    <string name="title_activity_right">綁定裝置</string>
+    <string name="timely_message">WECARE</string>
+    <string name="character_name">character_name</string>
+    <string name="start_track_text">開啟追蹤</string>
+    <string name="title_activity_member_equipment">MemberEquipmentActivity</string>
+    <string name="title_activity_binding_wd_activity_1">BindingWdActivity_1</string>
+    <string name="title_activity_bind_wd_activity_2">BindWdActivity_2</string>
+    <string name="title_activity_binding_mt_activity_1">BindingMtActivity_1</string>
+    <string name="title_activity_binding_mt_activity_2">BindingMtActivity_2</string>
+    <string name="title_activity_heart">HeartActivity</string>
+    <string name="title_activity_owner">即時健康資訊</string>
+    <string name="title_activity_familymember">家庭健康資料</string>
+    <string name="title_activity_healthreport">每日報表</string>
+    <string name="title_activity_Healthpersonal">個人每日報表</string>
+    <string name="title_activity_heart_error">心跳異常圖表</string>
+
+</resources>

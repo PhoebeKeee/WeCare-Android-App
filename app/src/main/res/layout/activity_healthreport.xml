@@ -1,0 +1,199 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.victor.mertial_test.activities.healthreport.Healthreport"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:background="#F5F5F5"
+    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/detail">
+
+    <!--您的本週健康表現-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" - 昨日的健康表現 - "
+        android:textColor="#888888"
+        android:id="@+id/abc3"
+        android:padding="5dp"
+        android:textSize="20dp"
+        />
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:id="@+id/personalPhoto"
+            android:src="@drawable/testall"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testall"
+            android:textColor="#000000"
+            android:id="@+id/personalName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/personalPhoto"
+            android:layout_toEndOf="@+id/personalPhoto" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#888888"
+        android:id="@+id/abc2227"
+        android:padding="5dp"
+        android:textSize="3dp"
+        />
+
+    <!--本週健康要點-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" - WeCare健康要點 - "
+        android:textColor="#888888"
+        android:id="@+id/abc"
+        android:padding="5dp"
+        android:textSize="20dp"
+        />
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日常生活注意事項：正常生活起居，凡事得失心勿太重，維持情緒穩定，放鬆心情，放慢腳步 "
+            android:textColor="#000000"
+            android:id="@+id/textView6"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#888888"
+        android:id="@+id/abc222"
+        android:padding="5dp"
+        android:textSize="3dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" - 昨日健康數據列表 - "
+        android:textColor="#888888"
+        android:id="@+id/abc2224"
+        android:padding="5dp"
+        android:textSize="20dp"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#888888"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginLeft="9dp"
+        android:padding="7dp"
+        android:background="#FFFFFF"
+        android:id="@+id/heart">
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/heart">-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心跳"
+            android:id="@+id/personalName2"
+            android:textColor="#444444"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="五次"
+            android:textColor="#FF0000"
+            android:id="@+id/personalStatus2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/personalName2"
+            android:layout_toEndOf="@+id/personalName2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#444444"
+            android:text="異常"
+            android:id="@+id/error"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/personalStatus2"
+            android:layout_toEndOf="@+id/personalStatus2" />
+
+        <ImageButton
+            android:background="#00ffffff"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/circle_plus"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:id="@+id/imb"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="查看數據"
+            android:id="@+id/textView14"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imb"
+            android:layout_toStartOf="@+id/imb" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="205dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
+</ScrollView>
+    </LinearLayout>

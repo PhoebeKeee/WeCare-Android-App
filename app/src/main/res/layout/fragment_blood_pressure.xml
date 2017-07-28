@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.victor.mertial_test.fragments.BloodPressureFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:src="@drawable/blood12"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:id="@+id/bloodpressure_img"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/blood_pressure_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/blood_pressure_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收縮壓 "
+        android:textSize="23sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/blood_pressure_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="舒張壓 "
+        android:textSize="23sp"
+        android:layout_below="@+id/blood_pressure_1"
+        android:layout_alignLeft="@+id/blood_pressure_1"
+        android:layout_alignStart="@+id/blood_pressure_1" />
+
+    <ImageView
+        android:scaleType="centerInside"
+        android:src="@drawable/pressure005"
+        android:layout_width="320dp"
+        android:layout_height="140dp"
+        android:id="@+id/healthy_illstration"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/blood_pressure_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+</RelativeLayout>

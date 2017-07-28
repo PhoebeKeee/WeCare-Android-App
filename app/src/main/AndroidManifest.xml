@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.victor.mertial_test" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.member.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".activities.selfInfo.UserDataActivity"
+            android:label="@string/title_activity_user_data" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.selfInfo.OwnerActivity" />
+        </activity>
+        <activity
+            android:name=".activities.Message.message"
+            android:label="個人健康異常訊息" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.myCare.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.member.login"
+            android:label="登入" >
+        </activity>
+        <activity
+            android:name=".activities.member.newmember"
+            android:label="歡迎註冊新會員" >
+        </activity>
+        <activity
+            android:name=".activities.member.forgetpassword"
+            android:label="忘記密碼" >
+        </activity>
+        <activity
+            android:name=".activities.member.passwordreset"
+            android:label="重設密碼" >
+        </activity>
+        <activity
+            android:name=".activities.myCare.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.myMessage.MessageActivity"
+            android:label="@string/title_activity_message" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.myCare.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.setting.SettingActivity"
+            android:label="@string/title_activity_setting" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.myCare.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.setting.reset_higwei"
+            android:label="@string/title_activity_reset_higwei" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.setting.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".activities.familymember.FamilyActivity"
+            android:label="@string/title_activity_familymember" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.myCare.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.familymember.SearchMemberActivity"
+            android:label="@string/title_activity_familymember" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.familymember.FamilyActivity" />
+        </activity>
+        <activity
+            android:name=".activities.healthreport.Healthpersonal"
+            android:label="@string/title_activity_Healthpersonal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.myCare.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.healthreport.Healthreport"
+            android:label="@string/title_activity_healthreport" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.familymember.FamilyActivity" />
+        </activity>
+        <activity
+            android:name=".activities.setting.reset_share"
+            android:label="@string/title_activity_reset_share" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.setting.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".activities.setting.ShareSwitchActivity"
+            android:label="功能分享開關" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.setting.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".activities.setting.ShareActivity"
+            android:label="您已有的裝置" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.setting.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".activities.bindDivce.BindAndUnbindActivity"
+            android:label="@string/title_activity_right" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.myCare.HomeActivity" />
+        </activity>
+
+        <service
+            android:name=".Extras.HeartBeat.HeartBeatService"
+            android:enabled="true" />
+        <service android:name=".Extras.Pace.PaceService" />
+
+        <receiver android:name=".Extras.AlarmReceiver" >
+            <action android:name="android.intent.action.ALARM_SERVICE" />
+        </receiver>
+
+        <activity
+            android:name=".activities.Guidingpage_WearableDevice_Binding.BindingWdActivity_1"
+            android:label="@string/title_activity_binding_wd_activity_1" >
+        </activity>
+        <activity
+            android:name=".activities.Guidingpage_WearableDevice_Binding.BindingWdActivity_2"
+            android:label="@string/title_activity_bind_wd_activity_2" >
+        </activity>
+        <activity
+            android:name=".activities.Guidingpage_Monitor_Binding.BindingMtActivity_1"
+            android:label="@string/title_activity_binding_mt_activity_1" >
+        </activity>
+        <activity
+            android:name=".activities.Guidingpage_Monitor_Binding.BindingMtActivity_2"
+            android:label="@string/title_activity_binding_mt_activity_2" >
+        </activity>
+        <activity
+            android:name=".activities.selfInfo.OwnerActivity"
+            android:label="@string/title_activity_owner"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.myCare.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.picture.showpicture"
+            android:label="顯示選擇的照片"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.healthreport.heart_error"
+            android:label="@string/title_activity_heart_error" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.healthreport.Healthreport" />
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+</manifest>

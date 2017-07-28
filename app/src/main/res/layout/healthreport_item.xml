@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="8dp"
+    android:id="@+id/list_item">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="K.Phoebe"
+                android:id="@+id/personalName2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="47dp"
+                android:layout_marginStart="47dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dip"
+                android:text="Excellent"
+                android:textColor="#CC0000"
+                android:id="@+id/personalStatus2"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/gogo"
+                android:layout_toStartOf="@+id/gogo"
+                android:layout_marginRight="42dp"
+                android:layout_marginEnd="42dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="異常"
+                android:id="@+id/error"
+                android:layout_alignBottom="@+id/personalName2"
+                android:layout_toLeftOf="@+id/gogo"
+                android:layout_toStartOf="@+id/gogo" />
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/gogogo"
+                android:id="@+id/gogo"
+                android:layout_below="@+id/personalName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView></LinearLayout>

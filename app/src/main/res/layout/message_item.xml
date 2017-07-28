@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="8dp"
+    android:id="@+id/message_item">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ccvv"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/messPhoto"
+                android:src="@drawable/ic_tab_2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="K.Phoebe"
+                android:id="@+id/messName"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/messInfo"
+                android:layout_alignStart="@+id/messInfo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="血壓過高"
+                android:textColor="#000000"
+                android:layout_alignBottom="@+id/messPhoto"
+                android:layout_toRightOf="@+id/messPhoto"
+                android:layout_toEndOf="@+id/messPhoto"
+                android:id="@+id/messInfo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="170mmHg"
+                android:textColor="#888888"
+                android:id="@+id/messDetail"
+                android:layout_alignBottom="@+id/messInfo"
+                android:layout_toRightOf="@+id/messInfo"
+                android:layout_toEndOf="@+id/messInfo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="上午9:07"
+                android:textColor="#90A4AE"
+                android:id="@+id/messTime"
+                android:layout_alignTop="@+id/messName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/gogogo"
+                android:id="@+id/gogo"
+                android:layout_below="@+id/messName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView></LinearLayout>

@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_search_member"
+    android:orientation="vertical"
+    tools:context="com.example.victor.mertial_test.activities.myMessages.MessageActivity">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search2"
+        >
+        <EditText
+            android:id="@+id/member_name"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="請輸入欲新增的成員帳號"
+            android:textSize="20dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_alignTop="@+id/click_member"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+
+        <ImageButton
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:src="@drawable/search_icon"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:id="@+id/click_member"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="17dp" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listMember"
+            android:layout_below="@+id/click_member"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout></LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="primaryColor">#01579B</color>
+    <color name="primaryColorDark">#1976D2</color>
+
+    <!--tab color and 游標顏色-->
+    <color name="colorAccent">#01579B</color>
+
+    <!--navigation pressed-->
+    <color name="colorHighlight">#a7f8df</color>
+
+    <color name="bg_login">#BBDEFB</color>
+    <color name="bg_register">#888888</color>
+    <color name="bg_main">#428bca</color>
+
+
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#FFFFFF</color>
+    <color name="input_register_hint">#DDDDDD</color>
+
+    <color name="btn_login">#0D47A1</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+</resources>

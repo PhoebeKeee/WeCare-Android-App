@@ -1,0 +1,56 @@
+<LinearLayout
+    android:background="#DDDDDD"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.victor.mertial_test.activities.setting.SettingActivity"
+    android:weightSum="1"
+    android:id="@+id/activity_share">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+
+    <!--您的權限密碼-->
+
+
+
+
+    <!--穿戴式裝置及健康監測儀列表-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 穿戴式裝置及健康監測儀列表"
+        android:textColor="#000000"
+        android:id="@+id/wdandmonitor_list"
+        android:padding="5dp"
+        android:layout_marginLeft="7dp"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#666666"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"/>
+
+    <RelativeLayout
+        android:id="@+id/shareRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/share_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</LinearLayout>

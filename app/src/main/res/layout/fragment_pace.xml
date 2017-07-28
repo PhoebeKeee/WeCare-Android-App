@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.victor.mertial_test.activities.setting.SettingActivity"
+    android:weightSum="1"
+    android:id="@+id/activity_healthydata">
+
+
+    <ImageView
+        android:src="@drawable/walk"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:id="@+id/healthy_image"
+        android:layout_above="@+id/textStep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:text="3515"
+        android:id="@+id/textStep"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/healthy_illstration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:scaleType="centerInside"
+        android:src="@drawable/healthinformationwalk"
+        android:layout_width="330dp"
+        android:layout_height="150dp"
+        android:id="@+id/healthy_illstration"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <!--<ImageButton-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/getInformation"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_width="320dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:id="@+id/getHealthInformation"-->
+        <!--android:layout_gravity="center_horizontal" />-->
+
+
+</RelativeLayout>
+
