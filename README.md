@@ -7,7 +7,7 @@ There are some health monitorings in WeCare:
  * Heartbeat
  * Pace Counter
  
-![](/Users/PhoebeKe/Desktop/K.Phoebe/WeCare/WeCare_GitHub/12180897_899218976822452_1608502168_o.jpg)
+![](photo/12180897_899218976822452_1608502168_o.jpg)
 
 
 
